@@ -5,7 +5,7 @@ const app = express();
 const { connect, disconnect } = require("./config/db.config");
 const userRouter = require("./routes/user.routes");
 const corsOptions = {
-  origin: "http://localhost:3000",
+  origin: "*",
 };
 
 if (!process.env.SECRET_KEY) {
